@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gift Exchange</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type='text/javascript' src='webjars/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='webjars/visjs/4.8.2/vis.min.js'></script>
+    <script src="giftexchange.js"></script>
+
+    <link rel='stylesheet' href='webjars/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='webjars/font-awesome/4.6.1/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='giftexchange.css'>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Gift Exchange</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-9 no-float"><div id="mynetwork"></div></div>
+        <div class="col-xs-3 no-float match-panel">
+            <form><div class="form-group">
+                <div class="input-group">
+                    <input id="newName" class="form-control input-sm" type="text" placeholder="Enter Name">
+                    <div class="input-group-addon addPerson"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                </div>
+            </div></form>
+            <table id="tablePeople" class="table table-sm">
+                <thead><tr><th>Names</th><th>Match</th><th><i class="fa fa-refresh reMatch" aria-hidden="true"></i></th></tr></thead>
+                <tbody id="tbodyPeople"></tbody>
+            </table>
+        </div>
+    </div>
+</div><!-- /.container -->
+
+</body>
+</html>

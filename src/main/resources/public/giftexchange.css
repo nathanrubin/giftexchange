@@ -1,0 +1,37 @@
+html, body { height:100%; }
+body { padding-top: 50px; overflow: hidden; }
+
+.container-fluid {
+    display:table;
+    height: 100%;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-header { padding-left: 20px; }
+.row { height: 100%; display: table-row; }
+.col-xs-3.no-float, .col-xs-9.no-float { float: none; }
+.col-xs-3 { display: table-cell; }
+.col-xs-9 { display: table-cell; position: inherit; }
+
+.match-panel {
+    border-left: 1px solid #101010;
+    background-color: whitesmoke;
+    margin: 0;
+    padding-top: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.addPerson, .removePerson, .reMatch { cursor: pointer }
+
+#mynetwork {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+}
